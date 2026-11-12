@@ -1,0 +1,26 @@
+{
+  "name": "laviem-ai-skin-analysis",
+  "private": true,
+  "packageManager": "bun@1.4.0",
+  "workspaces": ["apps/*", "packages/*", "mpbench"],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "lint": "turbo lint",
+    "typecheck": "turbo typecheck",
+    "test": "turbo test",
+    "doctor": "bun run scripts/doctor.ts",
+    "seed": "bun run scripts/seed.ts",
+    "audit:lighthouse": "bun run scripts/lighthouse.ts",
+    "mobile:mirror": "./scripts/mobile-mirror.sh",
+    "mobile:dev": "./scripts/mobile-mirror.sh & bun run --filter mobile start"
+  },
+  "devDependencies": {
+    "shadcn": "^4.21.0",
+    "turbo": "^2",
+    "typescript": "^5"
+  },
+  "patchedDependencies": {
+    "react-native-vision-camera-face-detector@2.1.0": "patches/react-native-vision-camera-face-detector@2.1.0.patch"
+  }
+}

@@ -1,0 +1,4 @@
+# CODEOWNERS for LAVIEM AI Skin Analysis
+# Enforces that all code changes must be approved by dinhthianhsang before merging into main.
+
+* @dinhthianhsang
