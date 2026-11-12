@@ -22,3 +22,5 @@ graphify-out/
 *.pem
 *.apk
 supabase/.temp/
+.idea/
+.scratch/
