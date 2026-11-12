@@ -88,7 +88,7 @@ git clone https://github.com/dinhthianhsang/laviem-ai-skin-analysis.git
 cd laviem-ai-skin-analysis
 
 # Cài đặt toàn bộ dependencies cho tất cả workspaces
-bun install
+bun install  # hoặc npm install
 ```
 
 ### 2️⃣ Kiểm tra Môi trường Dự án
